@@ -32,6 +32,12 @@
   background-position: -10% 0%;
 }
 
+.card:hover > .card-content > .card-subtitle > .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 200ms;
+}
+
 .card:before {
   background: linear-gradient(
     130deg,
@@ -80,4 +86,13 @@
 .card-subtitle {
   font-size: 3vmin;
   margin-top: 2vmin;
+}
+
+.card-subtitle-word {
+  display: inline-block;
+  margin: 0vmin 0.3vmin;
+  opacity: 0;
+  position: relative;
+  transform: translateY(40%);
+  transition: 0;
 }
