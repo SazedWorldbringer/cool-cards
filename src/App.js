@@ -1,5 +1,5 @@
 import "./App.css";
-import TwitchCard from "./components/twitch-card/twitch-card";
+import TwitchCard from "./components/twitch-card/twitch";
 
 function App() {
   return (
