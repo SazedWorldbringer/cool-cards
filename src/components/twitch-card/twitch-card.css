@@ -28,6 +28,10 @@
   transform: scale(1.08, 1.03);
 }
 
+.card:hover > .card-content {
+  background-position: -10% 0%;
+}
+
 .card:before {
   background: linear-gradient(
     130deg,
@@ -46,10 +50,7 @@
   position: absolute;
   pointer-events: none;
   transition: background-position 350ms ease;
-}
-
-.card:hover > .card-content {
-  background-position: -10% 0%;
+  z-index: 1;
 }
 
 .card-content {
@@ -57,6 +58,7 @@
   background-position: 0% 0%;
   background-size: 5vmin 5vmin;
   padding: 5vmin;
+  position: relative;
   height: calc(100% - 10vmin);
   width: calc(100% - 10vmin);
   transition: background-position 350ms ease;
