@@ -20,6 +20,8 @@ const createSubtitle = (text) => text.split(" ").map(addWord); */
 const subtitle =
   "But in a much more real sense, I have no idea what I'm doing.";
 
+const individualWords = subtitle.split(" ");
+
 const TwitchCard = () => {
   return (
     <div className="container">
@@ -27,8 +29,14 @@ const TwitchCard = () => {
         <div className="card-content">
           <h3 className="card-title">I know exactly what I'm doing</h3>
           <h4 className="card-subtitle">
-            {subtitle.split(" ").map((word) => (
-              <span className="card-subtitle-word">{word}</span>
+            {individualWords.map((word, index = 1) => (
+              <span
+                key={index}
+                style={{ transitionDelay: `${index * 40} ms` }}
+                className="card-subtitle-word"
+              >
+                {word}
+              </span>
             ))}
           </h4>
         </div>
