@@ -1,5 +1,5 @@
 import React from "react";
-import "./twitch-card.css";
+import "./twitch.css";
 
 /* const subtitle = document.getElementsByClassName("card-subtitle")[0];
 
